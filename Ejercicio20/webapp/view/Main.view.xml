@@ -1,0 +1,66 @@
+<mvc:View 
+    controllerName="Ejercicio20.Ejercicio20.controller.Main" 
+    xmlns:mvc="sap.ui.core.mvc" 
+    displayBlock="true" 
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+	
+<Page id="page" title="{i18n>title}">
+    <content>
+        	<Table 
+                id="idProductsTable"
+		        inset="false"
+		        items="{modelOrderDetails>/value}"
+                >
+		<headerToolbar>
+			<OverflowToolbar>
+				<content>
+					<Title text="{i18n>titleTable}" level="H2"/>
+					
+				</content>
+			</OverflowToolbar>
+		</headerToolbar>
+		<infoToolbar>
+			<OverflowToolbar>
+				<Label text="{i18n>subtitleTable}"/>
+			</OverflowToolbar>
+		</infoToolbar>
+		<columns>
+			<Column>
+				<Text text="{i18n>columnOrderId}" />
+			</Column>
+			<Column>
+				<Text text="{i18n>columnProductId}" />
+			</Column>
+			<Column>
+				<Text text="{i18n>columnUnitPrice}" />
+			</Column>
+			<Column>
+				<Text text="{i18n>columnQuantity}" />
+			</Column>
+			<Column>
+				<Text text="{i18n>columnDiscount}" />
+			</Column>
+		</columns>
+		<items>
+			<ColumnListItem type="Active" press="onListItemPress">
+				<cells>
+					<ObjectNumber
+						number="{modelOrderDetails>OrderID}"/>
+					<ObjectNumber
+						number="{modelOrderDetails>ProductID}" />
+					<ObjectNumber
+						number="{modelOrderDetails>UnitPrice}" />
+					<ObjectNumber
+						number="{modelOrderDetails>Quantity}" />
+					<ObjectNumber
+						number="{modelOrderDetails>Discount}" />
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
+
+    </content>
+</Page>
+			
+</mvc:View>

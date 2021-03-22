@@ -1,0 +1,53 @@
+<mvc:View 
+    controllerName="Ejercicio20.Ejercicio20.controller.Detail" 
+    xmlns:mvc="sap.ui.core.mvc" 
+    displayBlock="true" 
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:f="sap.ui.layout.form">
+
+	<Page title="{i18n>pageTitleIdDisplay}" 
+        backgroundDesign="Solid" 
+        class="sapUiStdPage">
+
+		<content>
+           <f:SimpleForm title="{i18n>titleIdDisplay}">
+                <f:content>
+                    <Label text= "{i18n>orderIdDisplay}"/>
+                    <Text text="{modelOrders>/OrderID}"/>
+                    <Label text= "{i18n>customerIdDisplay}"/>
+                    <Text text="{modelOrders>/CustomerID}"/>
+                    <Label text= "{i18n>employeeIdDisplay}"/>
+                    <Text text="{modelOrders>/EmployeeID}"/>
+                    <Label text= "{i18n>orderDateIdDisplay}"/>
+                    <Text text="{modelOrders>/OrderDate}"/>
+                    <Label text= "{i18n>requiredDateIdDisplay}"/>
+                    <Text text="{modelOrders>/RequiredDate}"/>
+                    <Label text= "{i18n>shippedDateIdDisplay}"/>
+                    <Text text="{modelOrders>/ShippedDate}"/>
+                    <Label text= "{i18n>shipViaIdDisplay}"/>
+                    <Text text="{modelOrders>/ShipVia}"/>
+                    <Label text= "{i18n>freightIdDisplay}"/>
+                    <Text text="{modelOrders>/Freight}"/>
+                    <Label text= "{i18n>shipNameIdDisplay}"/>
+                    <Text text="{modelOrders>/ShipName}"/>
+                    <Label text= "{i18n>shipAddressIdDisplay}"/>
+                    <Text text="{modelOrders>/ShipAddress}"/>
+                    <Label text= "{i18n>shipCityIdDisplay}"/>
+                    <Text text="{modelOrders>/ShipCity}"/>
+                    <Label text= "{i18n>shipRegionIdDisplay}"/>
+                    <Text text="{modelOrders>/ShipRegion}"/>
+                    <Label text= "{i18n>shipPostalCodeIdDisplay}"/>
+                    <Text text="{modelOrders>/ShipPostalCode}"/>
+                    <Label text= "{i18n>shipCountryIdDisplay}"/>
+                    <Text text="{modelOrders>/ShipCountry}"/>
+
+
+
+                </f:content>
+            </f:SimpleForm>
+            
+        </content>
+	</Page>
+			
+</mvc:View>

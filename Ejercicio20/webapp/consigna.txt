@@ -1,0 +1,12 @@
+Ejercicio 20:
+
+1. Crear una aplicación UI5 vacía. 
+
+2. Agregar una vista principal que contenga una tabla 
+que se cargue con la información obtenida del GET a la entity: /V3/Northwind/Northwind.svc/Order_Details
+
+3. Agregar la funcionalidad para que al presionar un 
+elemento de la tabla tome como parametro el OrderdId y 
+realice un GET a la entity: "/V3/Northwind/Northwind.svc/Orders("nroOrder")".
+
+4. Mostrar la información obtenida en una nueva vista
